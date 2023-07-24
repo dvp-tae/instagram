@@ -1,0 +1,18 @@
+<p>
+    <input id="radio" type="radio" name="radioGroup" value="option1" checked/>Option 1
+    <input id="radio" type="radio" name="radioGroup" value="option2"/>Option 2
+    <input id="radio" type="radio" name="radioGroup" value="option3"/>Option 3
+</p>
+
+<script>
+  // Add event listener to the radio buttons
+  let radioButtons = document.querySelectorAll('input[type="radio"][name="radioGroup"]');
+  radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener("change", function(e) {
+      if (e.target.checked) {
+        console.log("Selected option:", e.target.value);
+        // Do something else based on the selected option
+      }
+    });
+  });
+</script>

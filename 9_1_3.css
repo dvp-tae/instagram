@@ -61,12 +61,13 @@ body{
     font-size: 6vw;
     font-weight: 100;
 }
-button{
+button:hover{
     height: 80%;
     width: 95%;
 
+    cursor: pointer;
     font-size: 3vw;
-    background-color: white;
+    background: white;
     border: solid gray 1px;
     border-radius: 3px;
 }

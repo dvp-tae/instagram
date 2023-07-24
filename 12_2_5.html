@@ -1,0 +1,17 @@
+<!-- <input type="button" value="버튼"/>
+<script>
+    let button = document.querySelector("input")
+    button.addEventListener("click",
+        function(e){
+            alert("clicked")
+        }
+    )
+</script> -->
+<input/>
+<script>
+    let button = document.querySelector("input")
+    button.addEventListener("input",
+        function(e){
+            console.log(e.target.value)
+        })
+</script>
