@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",
 
         button.addEventListener("click",
             function(e){
-                // console.log(p.textContent)
-                p.textContent = "JS로 입력함"
+                console.log(p.textContent)
+                // p.textContent = "JS로 입력함"
             })
     })

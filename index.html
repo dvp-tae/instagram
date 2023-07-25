@@ -2,16 +2,13 @@
     <head>
         <link href="9_1_3.css" rel="stylesheet">
         <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
-        <script defer src="btm.js"></script>
+        <script src="script.js"></script>
+        <!-- <script defer src="btm.js"></script> -->
     </head>
     <body>
-        <script>
-            console.log("test")
-            alert("오늘은 기분이 어떠신가요?")
-        </script>
         <div id="top">
             <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
-            <input type="search" value="🔎검색"/>
+            <input type="search" placeholder="🔎검색"/>
             <div>
                 <i class="fas fa-home"></i>
                 <i class="far fa-paper-plane"></i>
@@ -24,20 +21,21 @@
                 <img class="circle_pic" src="image/profile.jpg"/>
             </div>
             <div id="profile_info">
-                <div id="id">th.xogus<i class="fas fa-cog"></i></div>
-                <button class="btn">프로필 편집</button>
+                <div id="id">
+                    <span>th.xogus_</span>
+                    <i class="fas fa-cog"></i>
+                </div>
+                <button>프로필 편집</button>
             </div>
         </div>
         <div>
             <p>
-                <strong>
-                    성태현 (sth)
-                </strong><br/>
-                프로그래머
+                <strong id="userInfo">성태현(sth)</strong><br/>
+                <span id="summary">프로그래머</span>
             </p>
-            <p>
-                <a href = "https://needleworm.github.io">
-                    needleworm.github.io
+            <p id="profileDetail">
+                <a href = "https://github.com/dvp-tae">
+                    github.com/dvp-tae
                 </a>
             </p>
         </div>
